@@ -1,0 +1,24 @@
+.appContainer div {
+    background-color: #eee;
+    padding: 1em;
+    margin: 1em;
+}
+
+.appContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.appContainer h1 {
+    /* font-family: monospace;
+    margin: 0;
+    font-style: oblique; */
+
+    margin: 0;
+    margin-bottom: 0.7em;
+    border-bottom: 1px solid #ddd;
+    font-weight: 600;
+    color: #2c3e50;
+    font-style: oblique;
+    font-family: monospace;
+}

@@ -7,35 +7,43 @@
         <title></title>
     </head>
     <body>
-        <div id="app">
-            {{message}}
+        <div class="appContainer">
+            <div id="app">
+                <h1>Declarative Rendering</h1>
+                {{message}}
+            </div>
+            <div id="app-1">
+                <h1>Binding Elements</h1>
+                <span v-bind:title="message1">
+                    Let us know your comment
+                </span>
+            </div>
+            <div id="app-2">
+                <h1>Conditional Rendering</h1>
+                <span v-if="seen">
+                    Nothing to share with you....
+                </span>
+            </div>
+            <div id="app-4">
+                <h1>Loops</h1>
+                <ol>
+                    <li v-for="todo in todos">
+                        {{todo.text}}
+                    </li>
+                </ol>
+            </div>
+            <div id="app-5">
+                <h1>Event Handling</h1>
+                <p>{{message}}</p>
+                <button v-on:click="reverseMessage">Reverse Message</button>
+            </div>
+            <div id="app-6">
+                <h1>Two-way Binding</h1>
+                <p>{{message}}</p>
+                <input v-model="message">
+            </div>
         </div>
-        <div id="app-1">
-            <span v-bind:title="message1">
-                Let us know your comment
-            </span>
-        </div>
-        <div id="app-2">
-            <span v-if="seen">
-                Nothing to share with you....
-            </span>
-        </div>
-        <div id="app-4">
-            <ol>
-                <li v-for="todo in todos">
-                    {{todo.text}}
-                </li>
-            </ol>
-        </div>
-        <div id="app-5">
-            <p>{{message}}</p>
-            <button v-on:click="reverseMessage">Reverse Message</button>
-        </div>
-        <div id="app-6">
-            <p>{{message}}</p>
-            <input v-model="message">
-        </div>
-        
+
         <script src="index.js"></script>
         <script src="indapp2.js"></script>
         <script src="indapp.js"></script>
