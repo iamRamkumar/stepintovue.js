@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <link rel="stylesheet" href="index.css">
+        <title></title>
+    </head>
+    <body>
+        <div id="app">
+            {{message}}
+        </div>
+        <div id="app-1">
+            <span v-bind:title="message1">
+                Let us know your comment
+            </span>
+        </div>
+        <div id="app-2">
+            <span v-if="seen">
+                Nothing to share with you....
+            </span>
+        </div>
+        <script src="index.js"></script>
+        <script src="indapp2.js"></script>
+        <script src="indapp.js"></script>
+
+    </body>
+</html>
