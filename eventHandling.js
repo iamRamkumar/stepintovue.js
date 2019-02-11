@@ -9,3 +9,10 @@ var app = new Vue({
         }
     }
 });
+
+var app2 = new Vue({
+    el: '#app-6',
+    data: {
+        message: "lllllllllllllllllllllllll"
+    }
+});
