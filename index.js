@@ -68,3 +68,27 @@ var app6 = new Vue({
         message: "Type Something...."
     }
 });
+
+/**
+* Creating Components
+*/
+Vue.component(
+    'todo-item',{
+        props: [ 'todo' ],
+        template: '<li> {{todo.text}} </li>'
+    }
+)
+
+/**
+* Component
+*/
+var app7 = new Vue({
+    el: '#app-7',
+    data: {
+        list: [
+            { id: 0, text: "Find Tutorial for Vue" },
+            { id: 1, text: "Learn Vue" },
+            { id: 2, text: "Implement Vue" },
+        ]
+    }
+});
