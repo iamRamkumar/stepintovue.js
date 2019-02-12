@@ -92,3 +92,20 @@ var app7 = new Vue({
         ]
     }
 });
+
+
+var data = { foo: "bar" }
+
+var vm = new Vue({
+  el: '#app-8',
+  data: data,
+  created: function () {
+    // `this` points to the vm instance
+    console.log('a is: ' + this.foo)
+  }
+});
+
+vm.$watch('foo', function (newValue, oldValue) {
+    console.log( " Foo Changed:"+ newValue + "\t" + "\t" + oldValue)
+  // This callback will be called when `vm.a` changes
+})
